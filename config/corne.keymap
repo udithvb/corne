@@ -30,10 +30,10 @@
 
             display-name = "base";
             bindings = <
-&kp TAB    &kp Q  &kp W            &kp F           &kp P               &kp B      &kp J    &kp L               &kp U           &kp Y           &kp SEMICOLON  &kp BSPC
-&kp LCTRL  &kp A  &mt R RIGHT_GUI  &mt S LEFT_ALT  &mt T LEFT_CONTROL  &kp G      &kp M    &mt N LEFT_CONTROL  &mt E LEFT_ALT  &mt I LEFT_GUI  &kp O          &kp SQT
-&kp LSHFT  &kp Z  &kp X            &kp C           &mt D LSHIFT        &kp V      &kp K    &mt H LSHIFT        &kp COMMA       &kp DOT         &kp FSLH       &kp ESC
-                                   &kp ESCAPE      &lt 2 SPACE         &kp TAB    &kp RET  &lt 1 BACKSPACE     &kp DELETE
+&kp TAB    &kp Q  &kp W       &kp F           &kp P               &kp B      &kp J    &kp L               &kp U           &kp Y           &kp SEMICOLON  &kp BSPC
+&kp LCTRL  &kp A  &mt LGUI R  &mt LEFT_ALT S  &mt LEFT_CONTROL T  &kp G      &kp M    &mt LEFT_CONTROL N  &mt LEFT_ALT E  &mt LEFT_GUI I  &kp O          &kp SQT
+&kp LSHFT  &kp Z  &kp X       &kp C           &mt LEFT_SHIFT D    &kp V      &kp K    &mt LEFT_SHIFT H    &kp COMMA       &kp DOT         &kp FSLH       &kp ESC
+                              &kp ESCAPE      &lt 2 SPACE         &kp TAB    &kp RET  &lt 1 BACKSPACE     &kp DELETE
             >;
         };
 
