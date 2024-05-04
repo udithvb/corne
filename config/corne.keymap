@@ -18,18 +18,6 @@
         };
     };
 
-    behaviors {
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
-            bindings = <&none>, <&none>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -109,6 +97,24 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
+        };
+
+        i3 {
+            bindings = <
+&trans  &kp LG(TAB)  &trans            &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans            &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                       &trans            &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        i3_keys {
+            if-layers = <1 6>;
+            then-layer = <7>;
         };
     };
 };
