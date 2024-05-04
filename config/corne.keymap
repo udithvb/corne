@@ -32,10 +32,10 @@
 
             display-name = "base";
             bindings = <
-&kp TAB    &kp Q  &kp W       &kp F           &kp P               &kp B        &kp J         &kp L               &kp U           &kp Y           &kp SEMICOLON  &kp BSPC
-&kp LCTRL  &kp A  &mt LGUI R  &mt LEFT_ALT S  &mt LEFT_CONTROL T  &kp G        &kp M         &mt LEFT_CONTROL N  &mt LEFT_ALT E  &mt LEFT_GUI I  &kp O          &kp SQT
-&kp LSHFT  &kp Z  &kp X       &kp C           &mt LEFT_SHIFT D    &kp V        &kp K         &mt LEFT_SHIFT H    &kp COMMA       &kp DOT         &kp FSLH       &kp ESC
-                              &lt 5 ESCAPE    &lt 2 SPACE         &lt 4 TAB    &lt 3 RETURN  &lt 1 BACKSPACE     &lt 6 DELETE
+&none  &kp Q  &kp W       &kp F           &kp P               &kp B        &kp J         &lt 7 L             &kp U           &kp Y           &kp SEMICOLON  &none
+&none  &kp A  &mt LGUI R  &mt LEFT_ALT S  &mt LEFT_CONTROL T  &kp G        &kp M         &mt LEFT_CONTROL N  &mt LEFT_ALT E  &mt LEFT_GUI I  &kp O          &none
+&none  &kp Z  &kp X       &kp C           &mt LEFT_SHIFT D    &kp V        &kp K         &mt LEFT_SHIFT H    &kp COMMA       &kp DOT         &kp FSLH       &none
+                          &lt 5 ESCAPE    &lt 2 SPACE         &lt 4 TAB    &lt 3 RETURN  &lt 1 BACKSPACE     &lt 6 DELETE
             >;
         };
 
@@ -48,75 +48,76 @@
 
             display-name = "num";
             bindings = <
-&kp TAB     &kp N1        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &kp NUMBER_0  &kp SPACE       &kp RET   &trans    &kp RALT
+&none  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET       &none  &none  &none  &none  &none  &none
+&none  &kp SQT           &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL               &none  &none  &none  &none  &none  &none
+&none  &kp TILDE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NON_US_BACKSLASH    &none  &none  &none  &none  &none  &none
+                                       &none         &kp N0        &kp MINUS               &none  &none  &none
             >;
         };
 
         nav {
-            display-name = "nav";
             bindings = <
-&kp TAB     &kp N1        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &kp NUMBER_0  &kp SPACE       &kp RET   &trans    &kp RALT
+&none  &none  &none  &none  &none  &none    &none     &none           &none         &none      &none  &none
+&none  &none  &none  &none  &none  &none    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none  &none
+&none  &none  &none  &none  &none  &none    &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &none  &none
+                     &none  &none  &none    &none     &none           &none
             >;
         };
 
         sym {
             bindings = <
-&trans  &trans  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RPAR)   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(AMPS)   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LS(EXCL)   &kp LS(AT)     &kp LS(POUND)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans         &kp LS(RPAR)   &trans    &trans  &trans  &trans
+&none  &kp LS(LBRC)   &kp LS(AMPS)  &kp LS(STAR)     &kp LS(LPAR)   &kp LS(RBRC)      &none  &none  &none  &none  &none  &none
+&none  &kp LS(DQT)    &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp PLUS          &none  &none  &none  &none  &none  &none
+&none  &kp LS(TILDE)  &kp EXCL      &kp LS(AT_SIGN)  &kp LS(POUND)  &kp PIPE          &none  &none  &none  &none  &none  &none
+                                    &kp LS(LPAR)     &kp LS(RPAR)   &kp UNDERSCORE    &none  &none  &none
             >;
         };
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
         };
 
         media {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_CLR      &bt BT_NXT    &bt BT_PRV    &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                        &trans  &trans  &trans    &trans          &trans        &trans
+&none  &none  &none  &none  &none  &none    &bt BT_CLR_ALL  &none         &none         &none         &none         &none
+&none  &none  &none  &none  &none  &none    &bt BT_CLR      &bt BT_NXT    &bt BT_PRV    &none         &none         &none
+&none  &none  &none  &none  &none  &none    &none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+                     &none  &none  &none    &none           &none         &none
             >;
         };
 
         fun {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
         };
 
         i3 {
             bindings = <
-&trans  &kp LG(TAB)  &trans            &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans            &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                       &trans            &trans  &trans    &trans  &trans  &trans
+&none  &kp LG(TAB)  &kp LG(N7)        &kp LG(N8)        &kp LG(N9)        &none          &none  &none  &none  &none  &none  &none
+&none  &none        &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(NUMBER_6)  &none          &none  &none  &none  &none  &none  &none
+&none  &none        &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &none          &none  &none  &none  &none  &none  &none
+                                      &none             &kp LG(N0)        &kp LG(TAB)    &none  &none  &none
+            >;
+        };
+
+        dummy {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        i3_keys {
-            if-layers = <1 6>;
-            then-layer = <7>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
