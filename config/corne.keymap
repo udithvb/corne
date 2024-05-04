@@ -30,10 +30,10 @@
 
             display-name = "base";
             bindings = <
-&kp TAB    &kp Q  &kp W       &kp F           &kp P               &kp B      &kp J    &kp L               &kp U           &kp Y           &kp SEMICOLON  &kp BSPC
-&kp LCTRL  &kp A  &mt LGUI R  &mt LEFT_ALT S  &mt LEFT_CONTROL T  &kp G      &kp M    &mt LEFT_CONTROL N  &mt LEFT_ALT E  &mt LEFT_GUI I  &kp O          &kp SQT
-&kp LSHFT  &kp Z  &kp X       &kp C           &mt LEFT_SHIFT D    &kp V      &kp K    &mt LEFT_SHIFT H    &kp COMMA       &kp DOT         &kp FSLH       &kp ESC
-                              &kp ESCAPE      &lt 2 SPACE         &kp TAB    &kp RET  &lt 1 BACKSPACE     &kp DELETE
+&kp TAB    &kp Q  &kp W       &kp F           &kp P               &kp B        &kp J         &kp L               &kp U           &kp Y           &kp SEMICOLON  &kp BSPC
+&kp LCTRL  &kp A  &mt LGUI R  &mt LEFT_ALT S  &mt LEFT_CONTROL T  &kp G        &kp M         &mt LEFT_CONTROL N  &mt LEFT_ALT E  &mt LEFT_GUI I  &kp O          &kp SQT
+&kp LSHFT  &kp Z  &kp X       &kp C           &mt LEFT_SHIFT D    &kp V        &kp K         &mt LEFT_SHIFT H    &kp COMMA       &kp DOT         &kp FSLH       &kp ESC
+                              &lt 5 ESCAPE    &lt 2 SPACE         &lt 4 TAB    &lt 3 RETURN  &lt 1 BACKSPACE     &lt 6 DELETE
             >;
         };
 
@@ -60,6 +60,42 @@
 &bt BT_CLR  &bt BT_SEL 0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
 &kp LSHFT   &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans          &trans    &trans    &trans    &trans     &trans  &trans
                                         &kp LGUI      &kp NUMBER_0  &kp SPACE       &kp RET   &trans    &kp RALT
+            >;
+        };
+
+        sym {
+            bindings = <
+&trans  &trans  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RPAR)   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(AMPS)   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LS(EXCL)   &kp LS(AT)     &kp LS(POUND)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans         &kp LS(RPAR)   &trans    &trans  &trans  &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        media {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        fun {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
