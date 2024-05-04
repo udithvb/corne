@@ -22,8 +22,10 @@
         new_behavior: new_behavior {
             compatible = "zmk,behavior-hold-tap";
             label = "NEW_BEHAVIOR";
-            bindings = <&mt>;
+            bindings = <&none>, <&none>;
+
             #binding-cells = <2>;
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
         };
     };
